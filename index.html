@@ -1,0 +1,115 @@
+<section class="overflow-hidden" x-data="{ mobileNavOpen: false }">
+  <div class="bg-white">
+    <div class="container px-4 mx-auto">
+      <div class="flex items-center justify-between py-5">
+        <div class="w-auto">
+          <div class="flex flex-wrap items-center">
+            <div class="w-auto pr-2">
+              <a href="#">
+                <img src="https://static.shuffle.dev/uploads/files/63/633660fd6f74816bebda449597f0e0458a674f7b/logos/logo-cd3174126858f74fcc713ab70bcbcdd4.png" alt=""/>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="w-auto">
+          <div class="flex flex-wrap items-center">
+            <div class="w-auto hidden lg:block">
+              <ul class="flex items-center mr-8">
+                <li class="mr-14 font-medium text-gray-700 hover:text-gray-900 tracking-tight"><a href="#">3D Visualization</a></li>
+                <li class="mr-14 font-medium text-gray-700 hover:text-gray-900 tracking-tight"><a href="#">AR Surgery Tools</a></li>
+                <li class="mr-8 font-medium text-gray-700 hover:text-gray-900 tracking-tight border-r border-gray-300 pr-8"><a href="#">Case Studies</a></li>
+                <li class="font-medium text-gray-700 hover:text-gray-900 tracking-tight"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="w-auto hidden lg:block">
+              <div class="inline-block"><a class="inline-block px-5 py-3 text-white font-semibold text-center tracking-tight bg-cyan-600 hover:bg-cyan-700 rounded-lg focus:ring-4 focus:ring-cyan-300 transition duration-200" href="#">Request Consultation</a></div>
+            </div>
+            <div class="w-auto lg:hidden">
+              <button x-on:click="mobileNavOpen = !mobileNavOpen">
+                <svg class="text-cyan-600" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="56" height="56" rx="28" fill="currentColor"></rect>
+                  <path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}" class="hidden fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
+      <div x-on:click="mobileNavOpen = !mobileNavOpen" class="fixed inset-0 bg-gray-800 opacity-80"></div>
+      <nav class="relative z-10 px-9 pt-8 bg-white h-full overflow-y-auto">
+        <div class="flex flex-wrap justify-between h-full">
+          <div class="w-full">
+            <div class="flex items-center justify-between -m-2">
+              <div class="w-auto p-2">
+                <a class="inline-block" href="#">
+                  <img src="https://static.shuffle.dev/uploads/files/63/633660fd6f74816bebda449597f0e0458a674f7b/logos/logo-cd3174126858f74fcc713ab70bcbcdd4.png" alt=""/>
+                </a>
+              </div>
+              <div class="w-auto p-2">
+                <button x-on:click="mobileNavOpen = !mobileNavOpen" class="text-gray-700">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center py-16 w-full">
+            <ul>
+              <li class="mb-12 font-medium text-gray-700 hover:text-gray-900 tracking-tight"><a href="#">3D Visualization</a></li>
+              <li class="mb-12 font-medium text-gray-700 hover:text-gray-900 tracking-tight"><a href="#">AR Surgery Tools</a></li>
+              <li class="mb-12 font-medium text-gray-700 hover:text-gray-900 tracking-tight"><a href="#">Case Studies</a></li>
+              <li class="font-medium text-gray-700 hover:text-gray-900 tracking-tight"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col justify-end w-full pb-8"><a class="inline-block px-5 py-3 text-white font-semibold text-center tracking-tight bg-cyan-600 hover:bg-cyan-700 rounded-lg focus:ring-4 focus:ring-cyan-300 transition duration-200" href="#">Request Consultation</a></div>
+        </div>
+      </nav>
+    </div>
+    <div class="pt-16 lg:pt-32 pb-24 lg:pb-52 bg-gray-50 overflow-hidden">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -m-8">
+          <div class="w-full md:w-1/2 p-8">
+            <div class="md:max-w-lg">
+              <span class="inline-block mb-8 px-3 py-1 text-cyan-800 font-semibold bg-cyan-100 rounded-full">Medical Technology Leaders</span>
+              <h1 class="font-heading mb-12 text-6xl md:text-7xl text-gray-800 tracking-tighter">Precision in 3D Medical Visualization & AR Surgery Tools</h1>
+              <div class="flex flex-wrap -m-2 mb-14">
+                <div class="w-auto p-2"><a class="inline-block px-5 py-4 text-white font-semibold tracking-tight bg-cyan-600 hover:bg-cyan-700 rounded-lg focus:ring-4 focus:ring-cyan-300 transition duration-200" href="#">Request Consultation</a></div>
+                <div class="w-auto p-2">
+                  <a class="inline-flex items-center px-5 py-4 bg-transparent hover:bg-cyan-50 border border-cyan-600 hover:border-cyan-700 rounded-lg focus:ring-4 focus:ring-cyan-300 transition duration-200" href="#">
+                    <span class="text-cyan-600 font-semibold tracking-tight">View Case Studies</span>
+                  </a>
+                </div>
+              </div>
+              <div class="max-w-md">
+                <div class="flex flex-wrap -m-1.5">
+                  <div class="w-auto p-1.5">
+                    <div class="flex flex-wrap">
+                      <div class="w-auto">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=50&h=50&fit=crop&crop=face" alt=""/>
+                      </div>
+                      <div class="w-auto -ml-5">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=50&h=50&fit=crop&crop=face" alt=""/>
+                      </div>
+                      <div class="w-auto -ml-5">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=50&h=50&fit=crop&crop=face" alt=""/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1 p-1.5">
+                    <p class="text-gray-700 tracking-tight">Trusted by 500+ hospitals and medical institutions worldwide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 p-8">
+            <img class="transform hover:-translate-y-2 transition duration-500 rounded" src="https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwdGVjaG5vbG9neXxlbnwwfDJ8fHwxNzU3ODkxODg4fDA&ixlib=rb-4.1.0&q=80&w=1080&w=450" alt=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
